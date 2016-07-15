@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Page</title>
+	</head>
+
+	<body>
+		<h1>Contact Page</h1>
+
+		<p>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About Us</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</p>
+
+<!-- First exapmle of a form -->
+		<form action="http://www.exaample.com/subsrcibe.php" method="get">
+			<p>
+				This where the form controls will appear.
+			</p>
+		</form>
+
+<!-- Form with an input element-->
+		<form action="http://www.example.com/login.php">
+			<p>
+				Username:<input type="text" name="username" size="10" maxlength="15">
+			</p>
+		</form>
+<!-- Form with password input -->
+		<form action="http://www.example.com/login.php">
+			<p>
+				Username:<input type="text" name="username" size="15" maxlength="30">
+			</p>
+			<p>
+				Password:<input type="password" name="password" size="15" maxlength="30">
+			</p>
+		</form>
+<!-- Form with a large text area -->
+		<form action="http://www.example.com/login.php">
+			<p>
+				What do you think of this website so far?
+			</p>
+			<textarea name="comments" cols="40" rows="20">Enter your comments here...</textarea>
+		</form>
+
+<!-- Form with radio buttons -->
+		<form action="http://www.example.com/login.php">
+			<p>
+				Please select your favorite car<br>
+				<input type="radio" name="car" value="Audi">Audi
+				<input type="radio" name="car" value="BMW" checked="checked">BMW <!-- Checked attribute is used in the event that you want one of the options to be checked once the page loads -->
+				<input type="radio" name="car" value="Tesla">Tesla
+			</p>
+		</form>
+
+<!-- Form with check boxes -->
+		<form action="http://www.example.com/login.php">
+			<p>
+				Please select all operating systems you are familiar with:<br>
+				<input type="checkbox" name="OS" value="OS X">OS X
+				<input type="checkbox" name="OS" value="Windows">Windows
+				<input type="checkbox" name="OS" value="Linux">Linux
+			</p>
+		</form>
+
+<!--Form with a file input box -->
+		<form action="http://www.example.com/login.php" method="post">
+			<p>Please upload your photo:</p>
+			<input type="file" name="photo"><br>
+			<input type="submit" value="Upload">
+		</form>
+
+<!-- An example form from the textbook -->
+
+		<form action="http://www.example.com/review.php" method="get">
+      		<fieldset>
+        		<legend>
+          			Your Details:
+        		</legend>
+        		<label>
+					Name:
+          			<input type="text" name="name" size="30" maxlength="100">
+        		</label>
+        		<br />
+        		<label>
+					Email:
+          			<input type="email" name="email" size="30" maxlength="100">
+        		</label>
+        		<br /> 
+      		</fieldset>
+      			<br />
+      			
+      		<fieldset>
+				<legend>
+					Your Review:
+        		</legend>
+        	
+        		<p>
+		          <label for="hear-about">
+		            How did you hear about us?
+		          </label>
+			          <select name="referrer" id="hear-about">
+							<option value="google">Google</option> <option value="friend">Friend</option> <option value="advert">Advert</option> <option value="other">Other</option>
+			          </select>
+        		</p>
+
+				<p>
+					      Would you visit again?
+				          <br />
+				          <label>
+				            <input type="radio" name="rating" value="yes" />
+				Yes
+				          </label>
+				          <label>
+				            <input type="radio" name="rating" value="no" />
+				No
+				          </label>
+				          <label>
+				            <input type="radio" name="rating" value="maybe" />
+				Maybe
+				          </label>
+				        </p>
+				        <p>
+				          <label for="comments">
+				Comments:
+				          </label>
+				          <br />
+				          <textarea rows="4" cols="40" id="comments">
+				          </textarea>
+				</p> 
+
+				<label>
+		          <input type="checkbox" name="subscribe" checked="checked" />
+		          Sign me up for email updates
+        		</label>
+       			<br />
+        		<input type="submit" value="Submit review" />
+      		</fieldset>
+    </form>
+
+	</body>
+
+
+
+
+
+
+	
+</html>
